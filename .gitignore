@@ -1,0 +1,5 @@
+.venv/
+.devcontainer/
+.devcontainer/*
+temp/
+__pycache__/
