@@ -147,7 +147,7 @@ def generate_disparity_plot(plot_type: str, df, xtab, params: dict) -> str:
             )
 
         buf = BytesIO()
-        plt.savefig(buf, format='png', bbox_inches='tight', dpi=300)
+        #plt.savefig(buf, format='png', bbox_inches='tight', dpi=300)
         plt.close()
         buf.seek(0)
         return base64.b64encode(buf.getvalue()).decode()

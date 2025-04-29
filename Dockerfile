@@ -4,11 +4,6 @@ FROM python:3.9-slim
 ENV DEBIAN_FRONTEND=noninteractive
 
 # Instalación de dependencias del sistema
-RUN apt-get update && apt-get install -y \
-    build-essential \
-    curl \
-    git \
-    && rm -rf /var/lib/apt/lists/*
 
 # Crear directorio de trabajo
 WORKDIR /app
