@@ -1,4 +1,4 @@
-FROM python:3.09-slim
+FROM python:3.9-slim
 
 # Evita preguntas durante la instalación
 ENV DEBIAN_FRONTEND=noninteractive
