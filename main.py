@@ -156,7 +156,7 @@ def generate_plot(xtab, metric: str, attribute: str):
         
         # Guardar la figura en un buffer de memoria
         buf = BytesIO()
-        #plt.savefig(buf, format='png', bbox_inches='tight', dpi=300)
+        plt.savefig(buf, format='png', bbox_inches='tight', dpi=300)
         plt.close('all')
         buf.seek(0)
         
@@ -593,7 +593,7 @@ def generate_bias_plot(xtab, metrics, attributes):
         
         # Guardar la figura en un buffer de memoria
         buf = BytesIO()
-        #plt.savefig(buf, format='png', bbox_inches='tight', dpi=300)
+        plt.savefig(buf, format='png', bbox_inches='tight', dpi=300)
         #plt.savefig('test.png', format='png', bbox_inches='tight', dpi=300)
         plt.close('all')
         buf.seek(0)
