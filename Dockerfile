@@ -1,4 +1,4 @@
-FROM python:3.9-slim
+FROM python:3.11-slim
 
 # Evita preguntas durante la instalación
 ENV DEBIAN_FRONTEND=noninteractive
@@ -19,4 +19,4 @@ COPY . .
 EXPOSE 8000
 
 # Comando por defecto
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
