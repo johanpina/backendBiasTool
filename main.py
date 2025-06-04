@@ -53,6 +53,8 @@ last_bias_analysis = None
 
 app.add_middleware(
     CORSMiddleware,
+    # Permitir todas las solicitudes CORS
+    
     allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
@@ -635,3 +637,7 @@ async def get_plot(request: PlotRequest):
         attributes=request.attributes
     )
     return JSONResponse(content={"plot": plot_base64})
+
+@app.get("/api/health")
+async def health_check():
+    return JSONResponse(content={"status": "ok", "message": "API de Análisis de Sesgos está funcionando correctamente."})
