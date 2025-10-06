@@ -3,3 +3,4 @@
 .devcontainer/*
 temp/
 __pycache__/
+.vercel

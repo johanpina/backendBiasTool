@@ -5,3 +5,4 @@ pandas
 aequitas==1.0.0
 matplotlib
 scipy
+chardet
