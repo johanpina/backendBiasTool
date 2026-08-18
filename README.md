@@ -1,10 +1,15 @@
-# Backend de Análisis de Sesgo con Aequitas y FastAPI
+# Backend de Análisis de Sesgo y Equidad con FastAPI
 
-Este proyecto proporciona un backend de FastAPI para analizar el sesgo y la equidad en modelos de aprendizaje automático utilizando la biblioteca Aequitas. El backend procesa un archivo de datos CSV, realiza un análisis completo y devuelve los resultados, incluyendo tablas de métricas y visualizaciones, en un formato JSON estructurado.
+Este proyecto proporciona un backend de FastAPI para analizar el sesgo y la equidad en modelos de aprendizaje automático. El cálculo de métricas se realiza con un **motor propio ligero** (`api/metrics_core.py`, basado en pandas/numpy/scipy) que reemplaza a la antigua dependencia Aequitas, preservando las mismas métricas (crosstabs por subgrupo, disparidades vs. grupo de referencia y conclusiones de equidad Fair/Unfair). El backend procesa un archivo CSV, realiza un análisis completo y devuelve tablas de métricas y visualizaciones en un JSON estructurado.
+
+> **Motor de métricas.** Ver `docs/DECISIONES.md` para el detalle de por qué se
+> eliminó Aequitas, el contrato de columnas preservado y la semántica de los
+> grupos de referencia. El motor se valida contra Aequitas real (golden test) y
+> contra **Fairlearn** (`MetricFrame`) en la suite de pruebas.
 
 ## Requisitos
 
-- Python 3.8+
+- Python 3.12+
 - Pip
 
 ## 1. Instalación
@@ -13,6 +18,13 @@ Primero, clona el repositorio y navega al directorio del proyecto. Luego, instal
 
 ```bash
 pip install -r requirements.txt
+```
+
+Para ejecutar las pruebas, instala también las dependencias de desarrollo:
+
+```bash
+pip install -r requirements-dev.txt
+pytest
 ```
 
 ## 2. Cómo Ejecutar el Servidor

@@ -1,0 +1,46 @@
+{
+  "absolute_metrics": [
+    "accuracy",
+    "tpr",
+    "tnr",
+    "for",
+    "fdr",
+    "fpr",
+    "fnr",
+    "npv",
+    "precision",
+    "ppr",
+    "pprev",
+    "prev"
+  ],
+  "disparity_cols": [
+    "ppr_disparity",
+    "pprev_disparity",
+    "precision_disparity",
+    "fdr_disparity",
+    "for_disparity",
+    "fpr_disparity",
+    "fnr_disparity",
+    "tpr_disparity",
+    "tnr_disparity",
+    "npv_disparity"
+  ],
+  "group_counts_cols": [
+    "model_id",
+    "score_threshold",
+    "k",
+    "attribute_name",
+    "attribute_value",
+    "pp",
+    "pn",
+    "fp",
+    "fn",
+    "tn",
+    "tp",
+    "group_label_pos",
+    "group_label_neg",
+    "group_size",
+    "total_entities"
+  ],
+  "n_rows": 11
+}

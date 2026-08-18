@@ -2,7 +2,9 @@ fastapi
 uvicorn
 python-multipart
 pandas
-aequitas==1.0.0
-matplotlib
+numpy
 scipy
+scikit-learn
+matplotlib
+seaborn
 chardet

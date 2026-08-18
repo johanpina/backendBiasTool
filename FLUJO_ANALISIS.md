@@ -1,6 +1,19 @@
 # Flujo del Análisis de Sesgos en el Notebook
 
-El flujo de análisis de sesgos en el notebook `Flujo_aequitas.ipynb` sigue una secuencia lógica y estructurada en tres fases principales, utilizando la biblioteca Aequitas.
+> **Nota (Fase 1).** El backend ya **no usa Aequitas**: el cálculo lo realiza el
+> motor propio `api/metrics_core.py` (pandas/numpy/scipy). El flujo conceptual de
+> tres fases descrito abajo (Group → Bias → Fairness) **sigue siendo exacto** —
+> es la definición de las métricas que el nuevo motor reproduce fielmente
+> (validado contra Aequitas real y Fairlearn). El notebook se conserva como
+> referencia histórica y fuente del golden test.
+
+El flujo de análisis de sesgos sigue una secuencia lógica y estructurada en tres fases principales.
+
+> **Fase 3 — EDA.** Antes de las fases de abajo, la herramienta ejecuta un
+> **Análisis Exploratorio de los Datos** (`/api/eda`): perfila columnas, calcula
+> la asociación entre variables (Cramér's V) para detectar **proxies**, y emite
+> alertas de desbalance/calidad. Es un paso previo que ayuda a elegir bien las
+> columnas y a anticipar sesgos.
 
 Aquí se describe el proceso paso a paso:
 

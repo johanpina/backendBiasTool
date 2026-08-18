@@ -1,0 +1,12 @@
+model_id,score_threshold,k,attribute_name,attribute_value,pp,pn,fp,fn,tn,tp,group_label_pos,group_label_neg,group_size,total_entities
+0,binary 0/1,3317,race,African-American,2174,1522,805,532,990,1369,1901,1795,3696,7214
+0,binary 0/1,3317,race,Asian,8,24,2,3,21,6,9,23,32,7214
+0,binary 0/1,3317,race,Caucasian,854,1600,349,461,1139,505,966,1488,2454,7214
+0,binary 0/1,3317,race,Hispanic,190,447,87,129,318,103,232,405,637,7214
+0,binary 0/1,3317,race,Native American,12,6,3,1,5,9,10,8,18,7214
+0,binary 0/1,3317,race,Other,79,298,36,90,208,43,133,244,377,7214
+0,binary 0/1,3317,sex,Female,591,804,288,195,609,303,498,897,1395,7214
+0,binary 0/1,3317,sex,Male,2726,3093,994,1021,2072,1732,2753,3066,5819,7214
+0,binary 0/1,3317,age_cat,25 - 45,1924,2185,741,706,1479,1183,1889,2220,4109,7214
+0,binary 0/1,3317,age_cat,Greater than 45,394,1182,181,285,897,213,498,1078,1576,7214
+0,binary 0/1,3317,age_cat,Less than 25,999,530,360,225,305,639,864,665,1529,7214
