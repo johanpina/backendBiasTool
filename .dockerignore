@@ -1,0 +1,23 @@
+# Entornos y cachés
+.venv/
+venv/
+__pycache__/
+**/__pycache__/
+*.pyc
+.pytest_cache/
+# Pruebas, docs y material que no se necesita en runtime
+api/tests/
+docs/
+*.md
+Flujo_aequitas.ipynb
+requirements-dev.txt
+conftest.py
+pytest.ini
+# Control de versiones y meta
+.git/
+.gitignore
+.dockerignore
+Dockerfile
+.vercel
+temp/
+.DS_Store
