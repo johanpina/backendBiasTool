@@ -546,6 +546,9 @@ def run_full_analysis(
         "fairness_threshold": fairness_threshold,
         "min_group_size": min_group_size,
         "task_type": task_type,
+        # Método de selección del grupo de referencia (para mostrarlo en la UI y el PDF).
+        "ref_method": ref_method,
+        "performance_metric": performance_metric,
     }
 
     df_local = df[protected_attributes].copy()
